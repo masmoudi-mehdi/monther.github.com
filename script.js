@@ -1,8 +1,5 @@
-// Add dynamic animations or features
-document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', event => {
-        event.preventDefault();
-        const targetId = link.getAttribute('href').slice(1);
-        document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
-    });
-});
+document.getElementById('contactForm')?.addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Thank you for your message! I will get back to you soon.');
+  });
+  

@@ -1,0 +1,233 @@
+/* General reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+/* Container for centering content */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #1b5e20; /* Dark green background for the navbar */
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar .nav-list li {
+    font-size: 1.1rem;
+}
+
+.navbar .nav-list a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar .nav-list a:hover {
+    color: #4caf50;
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(45deg, #2a7f53, #2c6b47); /* Darker green */
+    padding: 100px 0 50px;
+    text-align: center;
+    position: relative;
+    margin-top: 60px; /* For the navbar */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.header-info {
+    flex: 1;
+    text-align: left;
+}
+
+.header-info .name {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.header-info .role {
+    font-size: 1.5rem;
+    color: #cccccc;
+}
+
+.contact p {
+    margin-top: 10px;
+}
+
+.link {
+    color: #3bd1a3;
+    text-decoration: none;
+}
+
+.header-image {
+    flex: 0 0 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Section Styles */
+section {
+    padding: 50px 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #4caf50;
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Professional Summary */
+.summary p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: center;
+    color: #cccccc;
+}
+
+/* Experience Section */
+.experience .experience-item {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.experience .experience-item:hover {
+    transform: scale(1.05);
+}
+
+.experience h3 {
+    font-size: 2rem;
+    color: #4caf50;
+}
+
+.experience .role-date {
+    font-style: italic;
+    color: #aaaaaa;
+}
+
+.experience ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.experience ul li {
+    font-size: 1.1rem;
+    color: #dddddd;
+}
+
+/* Skills Section */
+.skills .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills .skill-item {
+    width: 45%;
+    margin-bottom: 30px;
+}
+
+.skills .progress-bar {
+    background-color: #444;
+    border-radius: 8px;
+    height: 8px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.skills .progress {
+    background-color: #4caf50;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* Languages Section */
+.languages ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.languages ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #aaaaaa;
+}
+
+/* Footer Styles */
+.footer {
+    background: #1a4d3b;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.contact-footer {
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+
+.social-links a i {
+    font-size: 2rem; /* Taille de l'icône */
+    color: #0e76a8; /* Couleur de l'icône LinkedIn */
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover i {
+    color: #0077b5; /* Couleur au survol */
+}
